@@ -109,22 +109,30 @@ function closeModal() {
 
 function deleteData(id) {
   const confirmDelete = confirm('Tem certeza que deseja excluir este contato?');
+  
   if (confirmDelete) {
-    fetch(`${deleteUrl}/${id}`, {
-      method: 'DELETE',
+    const deleteUrl = 'https://easycontactsagenda.azurewebsites.net/api/dell';
+    const urlToDelete = `${deleteUrl}/${id}`; 
+
+    fetch(urlToDelete, {
+      method: 'DELETE', 
+      headers: {
+        'Content-Type': 'application/json', 
+      },
     })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`Erro ao excluir dados: ${response.status}`);
-        }
-        alert('Contato excluído com sucesso!');
-        fetchContacts();
-      })
-      .catch(error => {
-        console.error('Erro ao excluir dados:', error);
-        alert(`Erro: ${error.message}`);
-      });
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Erro ao excluir dados: ${response.status}`);
+      }
+      alert('Contato excluído com sucesso!');  
+      fetchContacts(); 
+    })
+    .catch(error => {
+      console.error('Erro ao excluir dados:', error);
+      alert(`Erro: ${error.message}`); 
+    });
   }
 }
+
 
 window.onload = fetchContacts;
