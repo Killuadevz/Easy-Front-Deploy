@@ -124,5 +124,3 @@
 ## © **Licença**
 
 Este projeto foi desenvolvido exclusivamente para fins educacionais como parte do curso no SENAI. Todos os direitos estão reservados aos autores.  
-
---- 
