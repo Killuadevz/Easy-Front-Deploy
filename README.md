@@ -114,7 +114,7 @@
   [👉 Repositório do Backend no GitHub](https://github.com/Killuadevz/Easy-Backend-Maven)
 
 - **🎨 Protótipo no Figma**:  
-  [👉 Link para o Protótipo no Figma ()]
+  [👉 Link para o Protótipo no Figma (https://www.figma.com/design/45zB8VOEiE8TH4GgyOP8kU/Untitled?fuid=1358127626764439031)]
 
 - **📜 Documentação ABNT**:  
   [👉 Link para a Documentação ABNT ()]
